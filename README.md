@@ -11,7 +11,8 @@ In this case gene is unsigned char. Chromosome is ordered array of indices into 
 
 #### Digits and Operators
 Example taken from [here](http://www.ai-junkie.com/ga/intro/gat3.html).
-> Given the digits 0 through 9 and the operators +, -, * and /,  find a sequence that will represent a given target number. The operators will be applied sequentially from left to right as you read.
+> Given the digits 0 through 9 and the operators +, -, * and /,  find a sequence that will represent a given target number. The operators will be applied sequentially from left to right as you read.  
+
 Chromosome is represented as bit string. Each 4 bits is mapped into one of allowed characters: numbers 0-9 and operators: +-*/ . Fitness is computed by converting chromosome into expression (while ingoring invalid characters). Value of fitness is inversed distance between target number and value of expression. Mutation is done by toggling genes.
 
 #### Circles
